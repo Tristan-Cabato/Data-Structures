@@ -1,0 +1,36 @@
+4
+John Pork
+3
+Math 1001
+5
+90
+CS 1001
+3
+90
+PE 1001
+2
+90
+Felicia Alvarado
+3
+Math 1001
+5
+90
+CS 1001
+3
+90
+PE 1001
+2
+90
+Xer Alor
+1
+GE 9999
+2
+50
+Charles Andrew Sicat
+2
+NSTP 1000
+3
+100
+PHILO 9000
+3
+90
