@@ -5,21 +5,16 @@ public class Students {
     float average;
 
     public void extraNewLines(Scanner scan) {
-        if (!scan.hasNextInt() || !scan.hasNextFloat()) {
-            scan.nextLine();
-        }
+        if (!scan.hasNextInt() || !scan.hasNextFloat()) scan.nextLine();
     }
 
     public float takeSubjectAverage(Scanner scan, int totalSubjects) {
         float totalUnits = 0, totalGradePoints = 0;
         
         for (int i = 0; i < totalSubjects; i++) {
-            String subjectLine = scan.nextLine();
-            // Supposedly subject to be stored in an array but idk what to do with it
-            extraNewLines(scan);
-            int units = scan.nextInt();
-            extraNewLines(scan);
-            float grade = scan.nextFloat();
+            scan.nextLine(); // Supposedly subject to be stored in an array but idk what to do with it
+            extraNewLines(scan); int units = scan.nextInt();
+            extraNewLines(scan); float grade = scan.nextFloat();
             
             if (scan.hasNextLine()) scan.nextLine();
             
@@ -33,10 +28,11 @@ public class Students {
         this.average = average;
     }
 
-    public void displayInfo() { 
-        System.out.println("""
+    public String addInfo() { 
+        return """
             Name: %s
             Average: %.2f
-        """.formatted(name, average));
+            
+        """.formatted(name, average);
     }
 }
